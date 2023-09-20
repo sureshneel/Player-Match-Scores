@@ -1,0 +1,24 @@
+GET http://localhost:3000/players/ HTTP/1.1
+
+###
+GET http://localhost:3000/players/1/ HTTP/1.1
+
+###
+PUT http://localhost:3000/players/1/ HTTP/1.1
+Content-Type:application/json
+
+{
+  "playerName": "Raju"
+}
+
+###
+GET http://localhost:3000/matches/3/ HTTP/1.1
+
+###
+GET http://localhost:3000/players/2/matches/ HTTP/1.1
+
+###
+GET http://localhost:3000/matches/3/players/ HTTP/1.1
+
+###
+GET http://localhost:3000/players/4/playerScores/ HTTP/1.1
